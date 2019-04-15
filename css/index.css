@@ -191,6 +191,7 @@ h1 {
 .landing-photo {
   width: 100%;
 }
+
 .content-text {
   font-size: 2rem;
 }
@@ -220,6 +221,7 @@ h1 {
 .content-container {
   margin: 1.8rem;
 }
+
 footer {
   border-top: 1px dotted blue;
   margin: 0.5rem;
@@ -242,3 +244,4 @@ footer {
   background-color: dodgerblue;
   margin: 5px;
 }
+
