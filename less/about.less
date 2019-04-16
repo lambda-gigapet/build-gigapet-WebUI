@@ -146,8 +146,13 @@ table {
 @import "mixins.less";
 @import "fontsettings.less";
 
+.about-container{
+    max-width: 425px;
+}
+
 html,
 body {
+    margin: 0 auto;
     height: 100%;
     font-size: 62.5%;
     font-family: @fontfamily;
@@ -163,6 +168,7 @@ h1 {
 }
 p {
     font-size: 2rem;
+    display: none;
 }
 .frontend{
     display: flex;
@@ -170,12 +176,14 @@ p {
 }
 .frontend-personal{
     width: 100%;
+
     img{
         display: flex;
-        width: 100%;
+        width: 40%;
         
     }
     h2{
+        width: 40%;
         display: flex;
         font-size: 2rem;
     }

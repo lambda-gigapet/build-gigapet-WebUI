@@ -131,8 +131,12 @@ table {
   margin: 0;
   padding: 0;
 }
+.about-container {
+  max-width: 425px;
+}
 html,
 body {
+  margin: 0 auto;
   height: 100%;
   font-size: 62.5%;
   font-family: arial;
@@ -147,6 +151,7 @@ h1 {
 }
 p {
   font-size: 2rem;
+  display: none;
 }
 .frontend {
   display: flex;
@@ -156,9 +161,10 @@ p {
 }
 .frontend-personal img {
   display: flex;
-  width: 100%;
+  width: 40%;
 }
 .frontend-personal h2 {
+  width: 40%;
   display: flex;
   font-size: 2rem;
 }
