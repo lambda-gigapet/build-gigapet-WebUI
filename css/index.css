@@ -186,6 +186,14 @@ header h3 {
   nav .hiddenFeatures {
     display: flex;
   }
+  header h3 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  nav .hiddenAboutUs {
+    display: flex;
+  }
 }
 nav a {
   width: 100%;
