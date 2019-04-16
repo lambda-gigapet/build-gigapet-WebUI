@@ -162,28 +162,34 @@ body {
 
 
 .container {
+    padding-top: 50px;
     background-color: blue;
     background: rgba(117, 141, 250, 0.4);
-    max-width: 300px;
+    max-width: 425px;
     width: 100%;
     margin: 0 auto;
 }
 
-@media(min-width: 500px) {
+@media(min-width: 800px) {
     .container {
-        max-width: 450px;
+        max-width: 750px;
+    }
+}
+@media(min-width: 1000px){
+    .container {
+        max-width: 1000px;
     }
 }
 
 
-
-
 nav {
+    padding-top: 35px;
     display: flex;
-    justify-content: space-around;
     font-size: 3rem;
     align-items: center;
     margin: 0 auto;
+    position: fixed;
+    width: 100%;
 
     .hiddenAboutUs {
         display: none;
@@ -195,7 +201,29 @@ nav {
 
 
 }
+header h3 {
+    font-family: @headerfont;
+    font-size: 3rem;
+    background-color: @navlinkbackground;
+    text-align: center;
+    position: fixed;
+    width:100%;
+}
 
+
+@media(min-width:800px){
+    nav .hiddenFeatures{
+        display: flex;
+    }
+    header h3 {
+        font-size: 3.5rem;
+    }
+}
+@media(min-width: 1000px){
+    nav .hiddenAboutUs{
+        display: flex;
+    }
+}
 nav a {
 
 
@@ -212,7 +240,7 @@ nav a {
     align-content: center;
 }
 
-@media(min-width:500px) {
+@media(min-width:800px) {
     nav a {
         font-size: 3rem;
     }
@@ -220,23 +248,40 @@ nav a {
 
 
 .cta-container {
+    
     margin: 0 auto;
     display: flex;
     width: 100%;
     flex-direction: column;
+    padding-top: 20px;
+    
+}
+
+.heroic-boy {
+    display: none;
+    width: 100%;
+}
+@media(min-width: 800px){
+    .heroic-boy{
+        display: flex;
+    }
 }
 
 h1 {
+    height: fit-content;
     display: flex;
     font-weight: bolder;
     font-size: 4rem;
     justify-content: center;
     text-align: center;
     font-family: @headerfont;
+    padding-top: 50px;
+    
+
 }
 
 
-@media(min-width:500px) {
+@media(min-width:800px) {
     h1 {
         text-align: center;
         flex-wrap: wrap;
@@ -260,7 +305,7 @@ h1 {
     font-size: 1rem;
 }
 
-@media(min-width: 500px) {
+@media(min-width: 800px) {
     .getApp-link {
         font-size: 1.2rem;
     }
@@ -295,15 +340,16 @@ h1 {
 .content-container h2{
     text-decoration: underline;
     font-weight: bolder;
-    font-size: 2.0rem;
+    font-size: 3.2rem;
     text-align: center;
     margin: 10px;
+    font-family: @headerfont;
 }
 
 footer {
     border-top: 1px dotted blue;
-    margin: .5rem;
-    padding: 1rem;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
