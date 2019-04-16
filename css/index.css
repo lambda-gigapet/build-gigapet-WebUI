@@ -148,6 +148,11 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media (min-width: 500px) {
+  .container {
+    max-width: 450px;
+  }
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -174,6 +179,11 @@ nav a {
   font-weight: bold;
   align-content: center;
 }
+@media (min-width: 500px) {
+  nav a {
+    font-size: 3rem;
+  }
+}
 .cta-container {
   margin: 0 auto;
   display: flex;
@@ -182,16 +192,24 @@ nav a {
 }
 h1 {
   display: flex;
-  margin: 0 auto;
   font-weight: bolder;
   font-size: 4rem;
   justify-content: center;
+  text-align: center;
   font-family: 'Dokdo', cursive;
+}
+@media (min-width: 500px) {
+  h1 {
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 5rem;
+  }
 }
 .landing-photo {
   width: 100%;
 }
-
 .content-text {
   font-size: 2rem;
 }
@@ -199,6 +217,11 @@ h1 {
   display: flex;
   justify-content: center;
   font-size: 1rem;
+}
+@media (min-width: 500px) {
+  .getApp-link {
+    font-size: 1.2rem;
+  }
 }
 .learn-btn {
   width: 85%;
@@ -211,6 +234,7 @@ h1 {
   margin: 0 auto;
   display: flex;
   align-content: center;
+  padding-top: 4px;
   justify-content: center;
   border-radius: 80px;
 }
@@ -218,10 +242,23 @@ h1 {
   background-color: #7d1dd6;
   color: pink;
 }
-.content-container {
-  margin: 1.8rem;
+.content-with-buttons {
+  border-bottom: 4px dotted blue;
 }
-
+.content-with-buttons:last-child {
+  border-bottom: none;
+}
+.content-container {
+  margin: 15px;
+}
+.content-container h2 {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 10px;
+  font-family: 'Dokdo', cursive;
+}
 footer {
   border-top: 1px dotted blue;
   margin: 0.5rem;
@@ -244,4 +281,3 @@ footer {
   background-color: dodgerblue;
   margin: 5px;
 }
-
