@@ -139,3 +139,26 @@ body {
   background: #020024;
   background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
 }
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 4rem;
+}
+p {
+  font-size: 2rem;
+}
+.frontend {
+  display: flex;
+}
+.frontend-personal {
+  width: 100%;
+}
+.frontend-personal img {
+  display: flex;
+  width: 100%;
+}
+.frontend-personal h2 {
+  display: flex;
+  font-size: 2rem;
+}
