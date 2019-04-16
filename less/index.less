@@ -162,6 +162,7 @@ body {
 
 
 .container {
+    padding-top: 50px;
     background-color: blue;
     background: rgba(117, 141, 250, 0.4);
     max-width: 425px;
@@ -174,16 +175,21 @@ body {
         max-width: 750px;
     }
 }
-
-
+@media(min-width: 1000px){
+    .container {
+        max-width: 1000px;
+    }
+}
 
 
 nav {
+    padding-top: 35px;
     display: flex;
-    justify-content: space-around;
     font-size: 3rem;
     align-items: center;
     margin: 0 auto;
+    position: fixed;
+    width: 100%;
 
     .hiddenAboutUs {
         display: none;
@@ -195,6 +201,16 @@ nav {
 
 
 }
+header h3 {
+    font-family: @headerfont;
+    font-size: 3rem;
+    background-color: @navlinkbackground;
+    text-align: center;
+    position: fixed;
+    width:100%;
+}
+
+
 @media(min-width:800px){
     nav .hiddenFeatures{
         display: flex;
@@ -230,13 +246,18 @@ nav a {
     display: flex;
     width: 100%;
     flex-direction: column;
+    padding-top: 20px;
     
 }
-.cta-including-buttons {
-    background-image: url('../img/boy-child-childhood-346796.jpg');
-    height:100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.heroic-boy {
+    display: none;
+    width: 100%;
+}
+@media(min-width: 800px){
+    .heroic-boy{
+        display: flex;
+    }
 }
 
 h1 {
