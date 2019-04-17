@@ -153,9 +153,9 @@ body {
   background-attachment: fixed;
 }
 .header-container {
-  max-width: 500px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: fixed;
   border-bottom: double lightblue 2px;
   padding: 5px;
@@ -232,6 +232,17 @@ p {
   border-radius: 10px;
 }
 .android-personal:hover {
+  background: rgba(232, 234, 238, 0.9);
+}
+.team-lead-personal {
+  width: 100%;
+  display: flex;
+  background: rgba(232, 234, 238, 0.377);
+  justify-content: space-around;
+  margin: 10px;
+  border-radius: 10px;
+}
+.team-lead-personal:hover {
   background: rgba(232, 234, 238, 0.9);
 }
 .headshot {
