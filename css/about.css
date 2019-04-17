@@ -165,8 +165,24 @@ body {
   background: linear-gradient(135deg, #cb60b3 0%, #c146a1 50%, #a80077 51%, #9f38e0 100%, #db36a4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb60b3', endColorstr='#db36a4', GradientType=1);
 }
-.nav-button-container {
+.nav-container {
   border-radius: 50%;
+}
+nav {
+  display: none;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 350px;
+  height: 100vh;
+  background-color: #81C784;
+  border: 1px solid #004D40;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+}
+.nav--open {
+  display: block;
 }
 h1 {
   display: flex;
