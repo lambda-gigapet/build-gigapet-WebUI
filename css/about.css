@@ -133,6 +133,12 @@ table {
 }
 .about-container {
   max-width: 425px;
+  margin: 0 auto;
+}
+@media (min-width: 800px) {
+  .about-container {
+    max-width: 775px;
+  }
 }
 html,
 body {
@@ -142,6 +148,8 @@ body {
   font-family: arial;
   background: #020024;
   background: radial-gradient(circle, #020024 0%, #090979 35%, #00d4ff 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 h1 {
   display: flex;
@@ -153,18 +161,71 @@ p {
   font-size: 2rem;
   display: none;
 }
-.frontend {
-  display: flex;
-}
 .frontend-personal {
   width: 100%;
-}
-.frontend-personal img {
   display: flex;
-  width: 40%;
+  background: rgba(232, 234, 238, 0.377);
+  margin: 10px;
+  border-radius: 10px;
 }
-.frontend-personal h2 {
-  width: 40%;
+.frontend-personal:hover {
+  background: rgba(232, 234, 238, 0.9);
+}
+.backend-personal {
+  width: 100%;
+  display: flex;
+  background: rgba(232, 234, 238, 0.377);
+  justify-content: space-around;
+  margin: 10px;
+  border-radius: 10px;
+}
+.backend-personal:hover {
+  background: rgba(232, 234, 238, 0.9);
+}
+.webui-personal {
+  width: 100%;
+  display: flex;
+  background: rgba(232, 234, 238, 0.377);
+  justify-content: space-around;
+  margin: 10px;
+  border-radius: 10px;
+}
+.webui-personal:hover {
+  background: rgba(232, 234, 238, 0.9);
+}
+.android-personal {
+  width: 100%;
+  display: flex;
+  background: rgba(232, 234, 238, 0.377);
+  justify-content: space-around;
+  margin: 10px;
+  border-radius: 10px;
+}
+.android-personal:hover {
+  background: rgba(232, 234, 238, 0.9);
+}
+.headshot {
+  width: 48%;
+  height: 35%;
+}
+@media (min-width: 800px) {
+  .headshot {
+    padding: 35px;
+  }
+}
+.name {
+  align-items: center;
+  width: 48%;
   display: flex;
   font-size: 2rem;
+}
+footer {
+  border-top: 1px dotted blue;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
 }
