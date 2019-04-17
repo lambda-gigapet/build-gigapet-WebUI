@@ -156,6 +156,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  justify-items: center;
   position: fixed;
   border-bottom: double lightblue 2px;
   padding: 5px;
@@ -166,16 +167,14 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb60b3', endColorstr='#db36a4', GradientType=1);
 }
 .nav-container {
-  border-radius: 50%;
-}
-nav {
+  border-radius: 8px;
   display: none;
   position: fixed;
-  top: 75px;
+  top: 135px;
   left: 0;
-  width: 350px;
+  width: 40%;
   height: 100vh;
-  background-color: #81C784;
+  background-color: rgba(129, 131, 245, 0.9);
   border: 1px solid #004D40;
   border-left: none;
   border-bottom: none;

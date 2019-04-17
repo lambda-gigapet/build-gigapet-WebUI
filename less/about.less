@@ -173,6 +173,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    justify-items: center;
     position: fixed;
     border-bottom: double lightblue 2px;
     padding: 5px;
@@ -185,23 +186,23 @@ body {
 }
 
 .nav-container{
-    border-radius:50%;
+    border-radius: 8px;
+    display: none;
+    position: fixed;
+    top: 135px;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: rgba(129, 131, 245, .9);
+    border: 1px solid #004D40;
+    border-left: none;
+    border-bottom: none;
+    z-index: 2;
 }
-nav{
-        display: none;
-        position: fixed;
-        top: 75px;
-        left: 0;
-        width: 350px;
-        height: 100vh;
-        background-color: #81C784;
-        border: 1px solid #004D40;
-        border-left: none;
-        border-bottom: none;
-        z-index: 2;
-}
+
 .nav--open {
     display: block;
+
   }
 
 h1 {
