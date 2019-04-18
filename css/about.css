@@ -132,7 +132,7 @@ table {
   border-spacing: 0;
 }
 .about-container {
-  padding-top: 130px;
+  padding-top: 150px;
   max-width: 425px;
   margin: 0 auto;
 }
@@ -175,13 +175,19 @@ body {
   width: 40%;
   height: 100vh;
   background-color: rgba(129, 131, 245, 0.9);
-  border: 1px solid #004D40;
+  border: 1px solid #004d40;
   border-left: none;
   border-bottom: none;
   z-index: 2;
 }
 .nav--open {
   display: block;
+}
+.tabs-links {
+  display: flex;
+  font-size: 2rem;
+  width: 100%;
+  justify-content: space-evenly;
 }
 .programmer-open {
   height: 400px;
