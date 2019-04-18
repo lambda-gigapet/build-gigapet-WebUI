@@ -185,6 +185,7 @@ body {
 }
 .programmer-open {
   height: 400px;
+  display: flex;
 }
 .programmer-open p {
   display: block;
@@ -202,20 +203,7 @@ p {
   font-size: 2rem;
   display: none;
 }
-.frontend-personal {
-  width: 100%;
-  display: flex;
-  background: rgba(232, 234, 238, 0.377);
-  margin: 10px;
-  border-radius: 10px;
-}
-.frontend-personal:hover {
-  background: rgba(232, 234, 238, 0.9);
-}
-.frontend-personal:first-child {
-  flex-direction: row-reverse;
-}
-.backend-personal {
+.programmer {
   width: 100%;
   display: flex;
   background: rgba(232, 234, 238, 0.377);
@@ -223,47 +211,7 @@ p {
   margin: 10px;
   border-radius: 10px;
 }
-.backend-personal:hover {
-  background: rgba(232, 234, 238, 0.9);
-}
-.backend-personal:first-child {
-  flex-direction: row-reverse;
-}
-.webui-personal {
-  width: 100%;
-  display: flex;
-  background: rgba(232, 234, 238, 0.377);
-  justify-content: space-evenly;
-  margin: 10px;
-  border-radius: 10px;
-}
-.webui-personal:hover {
-  background: rgba(232, 234, 238, 0.9);
-}
-.webui-personal:first-child {
-  flex-direction: row-reverse;
-}
-.android-personal {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  background: rgba(232, 234, 238, 0.377);
-  justify-content: space-around;
-  margin: 10px;
-  border-radius: 10px;
-}
-.android-personal:hover {
-  background: rgba(232, 234, 238, 0.9);
-}
-.team-lead-personal {
-  width: 100%;
-  display: flex;
-  background: rgba(232, 234, 238, 0.377);
-  justify-content: space-around;
-  margin: 10px;
-  border-radius: 10px;
-}
-.team-lead-personal:hover {
+.programmer:hover {
   background: rgba(232, 234, 238, 0.9);
 }
 .headshot {
