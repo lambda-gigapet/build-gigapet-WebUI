@@ -42,7 +42,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  justify-items: center;
+  justify-content: space-evenly;
   position: fixed;
   border-bottom: double lightblue 2px;
   padding: 5px;
@@ -92,16 +92,33 @@ body {
 .nav--open {
   display: block;
 }
-.tabs-links{
-    display: flex;
-    font-size: 2rem;
-    width:100%;
-    justify-content: space-evenly;
-}
-.programmer-open {
-  height: 400px;
+.tabs-links {
+  margin: 0 auto;
   display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+.tab {
+  border: 2px double lime;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  background: rgba(232, 234, 238, 0.377);
+  &:hover {
+    background: rgba(232, 234, 238, 0.9);
+  }
+}
+.active-tab{
+    background: blue;
+}
+
+.programmer-open {
+  height: auto;
+  display: flex;
+  flex-direction: column;
   p {
+    margin: 0 auto;
+    width: 100%;
     display: block;
   }
 }
@@ -121,19 +138,21 @@ p {
 }
 
 .programmer {
-  width: 100%;
+  width: 99%;
   display: flex;
   background: rgba(232, 234, 238, 0.377);
-  justify-content: space-around;
-  margin: 10px;
+  justify-content: space-evenly;
+  margin: 1%;
   border-radius: 10px;
   &:hover {
     background: rgba(232, 234, 238, 0.9);
   }
 }
-.headshot {
-  width: 48%;
-  height: 35%;
+.programmer .headshot {
+    display: flex;
+    max-width: 20%;
+    max-height: 20%;
+    
 }
 @media (min-width: 800px) {
   .headshot {
