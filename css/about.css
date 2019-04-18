@@ -184,6 +184,9 @@ body {
   display: block;
 }
 .programmer-open {
+  height: 400px;
+}
+.programmer-open p {
   display: block;
 }
 h1 {
