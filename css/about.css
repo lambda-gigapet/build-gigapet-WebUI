@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.+ | 20110126
    License: none (public domain)
@@ -126,13 +131,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 .about-container {
-  padding-top: 130px;
+  padding-top: 150px;
   max-width: 425px;
   margin: 0 auto;
 }
@@ -156,7 +156,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  justify-items: center;
+  justify-content: space-evenly;
   position: fixed;
   border-bottom: double lightblue 2px;
   padding: 5px;
@@ -175,12 +175,41 @@ body {
   width: 40%;
   height: 100vh;
   background-color: rgba(129, 131, 245, 0.9);
-  border: 1px solid #004D40;
+  border: 1px solid #004d40;
   border-left: none;
   border-bottom: none;
   z-index: 2;
 }
 .nav--open {
+  display: block;
+}
+.tabs-links {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+.tab {
+  border: 2px double lime;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  background: rgba(232, 234, 238, 0.377);
+}
+.tab:hover {
+  background: rgba(232, 234, 238, 0.9);
+}
+.active-tab {
+  background: blue;
+}
+.programmer-open {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.programmer-open p {
+  margin: 0 auto;
+  width: 100%;
   display: block;
 }
 h1 {
@@ -196,73 +225,21 @@ p {
   font-size: 2rem;
   display: none;
 }
-.frontend-personal {
-  width: 100%;
-  display: flex;
-  background: rgba(232, 234, 238, 0.377);
-  margin: 10px;
-  border-radius: 10px;
-}
-.frontend-personal:hover {
-  background: rgba(232, 234, 238, 0.9);
-}
-.frontend-personal:first-child {
-  flex-direction: row-reverse;
-}
-.backend-personal {
-  width: 100%;
-  display: flex;
-  background: rgba(232, 234, 238, 0.377);
-  justify-content: space-around;
-  margin: 10px;
-  border-radius: 10px;
-}
-.backend-personal:hover {
-  background: rgba(232, 234, 238, 0.9);
-}
-.backend-personal:first-child {
-  flex-direction: row-reverse;
-}
-.webui-personal {
-  width: 100%;
+.programmer {
+  width: 99%;
   display: flex;
   background: rgba(232, 234, 238, 0.377);
   justify-content: space-evenly;
-  margin: 10px;
+  margin: 1%;
   border-radius: 10px;
 }
-.webui-personal:hover {
+.programmer:hover {
   background: rgba(232, 234, 238, 0.9);
 }
-.webui-personal:first-child {
-  flex-direction: row-reverse;
-}
-.android-personal {
-  width: 100%;
+.programmer .headshot {
   display: flex;
-  flex-direction: row-reverse;
-  background: rgba(232, 234, 238, 0.377);
-  justify-content: space-around;
-  margin: 10px;
-  border-radius: 10px;
-}
-.android-personal:hover {
-  background: rgba(232, 234, 238, 0.9);
-}
-.team-lead-personal {
-  width: 100%;
-  display: flex;
-  background: rgba(232, 234, 238, 0.377);
-  justify-content: space-around;
-  margin: 10px;
-  border-radius: 10px;
-}
-.team-lead-personal:hover {
-  background: rgba(232, 234, 238, 0.9);
-}
-.headshot {
-  width: 48%;
-  height: 35%;
+  max-width: 20%;
+  max-height: 20%;
 }
 @media (min-width: 800px) {
   .headshot {

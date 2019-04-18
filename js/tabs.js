@@ -23,7 +23,7 @@ class TabLink {
     tabs.forEach(tab => {
       tab.classList.remove("active-tab");
     });
-    const cards = document.querySelectorAll(".name");
+    const cards = document.querySelectorAll(".card");
     cards.forEach(card => {
       card.style.display = "none";
     });
