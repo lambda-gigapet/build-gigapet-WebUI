@@ -147,6 +147,7 @@ table {
 @import "fontsettings.less";
 
 .about-container {
+    padding-top: 130px;
     max-width: 425px;
     margin: 0 auto;
 }
@@ -168,12 +169,50 @@ body {
     background-attachment: fixed;
 
 }
+.header-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: fixed;
+    border-bottom: double lightblue 2px;
+    padding: 5px;
+    background: #cb60b3;
+    background: -moz-linear-gradient(-45deg, #cb60b3 0%, #c146a1 50%, #a80077 51%, #9f38e0 100%, #db36a4 100%);
+    background: -webkit-linear-gradient(-45deg, #cb60b3 0%,#c146a1 50%,#a80077 51%,#9f38e0 100%,#db36a4 100%);
+    background: linear-gradient(135deg, #cb60b3 0%,#c146a1 50%,#a80077 51%,#9f38e0 100%,#db36a4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=1 );
+
+}
+
+.nav-container{
+    border-radius: 8px;
+    display: none;
+    position: fixed;
+    top: 135px;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: rgba(129, 131, 245, .9);
+    border: 1px solid #004D40;
+    border-left: none;
+    border-bottom: none;
+    z-index: 2;
+}
+
+.nav--open {
+    display: block;
+
+  }
 
 h1 {
     display: flex;
     justify-content: center;
+    align-content: space-between;
     font-family: @aboutfont;
     font-size: 4rem;
+    margin-left: 15px;
+    align-items: center;
 }
 
 p {
@@ -190,33 +229,46 @@ p {
     border-radius: 10px;
     &:hover{
         background: rgba(232, 234, 238, 0.9);
-    }  
+    }   
+    &:first-child{
+        flex-direction: row-reverse;
+    } 
 }
 .backend-personal {
     width: 100%;
     display: flex;
     background: rgba(232, 234, 238, 0.377);
     justify-content: space-around;
+    
     margin: 10px;
     border-radius: 10px;
     &:hover{
         background: rgba(232, 234, 238, 0.9);
-    }  
+    }
+    &:first-child{
+        flex-direction: row-reverse;
+    } 
+   
 }
 .webui-personal {
     width: 100%;
     display: flex;
     background: rgba(232, 234, 238, 0.377);
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 10px;
     border-radius: 10px;
     &:hover{
         background: rgba(232, 234, 238, 0.9);
-    }  
+    }
+    &:first-child{
+        flex-direction: row-reverse;
+        
+    }   
 }
 .android-personal{
     width: 100%;
     display: flex;
+    flex-direction: row-reverse;
     background: rgba(232, 234, 238, 0.377);
     justify-content: space-around;
     margin: 10px;
@@ -225,7 +277,17 @@ p {
         background: rgba(232, 234, 238, 0.9);
     }  
 }
-
+.team-lead-personal{
+    width: 100%;
+    display: flex;
+    background: rgba(232, 234, 238, 0.377);
+    justify-content: space-around;
+    margin: 10px;
+    border-radius: 10px;
+    &:hover{
+        background: rgba(232, 234, 238, 0.9);
+    } 
+}
 .headshot {
     // display: flex;
     width: 48%;
@@ -237,13 +299,15 @@ p {
         padding:35px;
     }
 }
-
 .name {
     align-items: center;
     width: 48%;
     display: flex;
     font-size: 2rem;
+    justify-content: center;
+    font-weight: 700;
 }
+
 footer {
     border-top: 1px dotted blue;
     margin: 10px;
