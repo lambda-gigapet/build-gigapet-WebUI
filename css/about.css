@@ -183,6 +183,9 @@ body {
 .nav--open {
   display: block;
 }
+.programmer-open {
+  display: block;
+}
 h1 {
   display: flex;
   justify-content: center;
