@@ -1,9 +1,7 @@
-
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 @import "reset.less";
 @import "variables.less";
@@ -11,227 +9,200 @@
 @import "mixins.less";
 @import "fontsettings.less";
 
-
-
-
 html,
 body {
-    height: 100%;
-    font-size: 62.5%;
-    font-family: @fontfamily;
-    background-color: @background;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: @fontfamily;
+  background-color: @background;
 }
-
+.welcome {
+  font-family: @headerfont;
+  font-size: 5rem;
+  display: flex;
+  align-content: center;
+}
 
 .container {
-    padding-top: 50px;
-    background: rgba(44,157,166, 0.4);
-    max-width: 425px;
-    width: 100%;
-    margin: 0 auto;
+  padding-top: 50px;
+  background: rgba(44, 157, 166, 0.4);
+  max-width: 425px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-@media(min-width: 800px) {
-    .container {
-        max-width: 750px;
-    }
+@media (min-width: 800px) {
+  .container {
+    max-width: 750px;
+  }
 }
-@media(min-width: 1000px){
-    .container {
-        max-width: 1000px;
-    }
-}
-
-.nav-bar-container{
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    max-width: 425px;
-    position: fixed;
+@media (min-width: 1000px) {
+  .container {
+    max-width: 1000px;
+  }
 }
 
-.nav-container{
-    border-radius: 8px;
-    display: none;
-    position: fixed;
-    top: 135px;
-    left: 0;
-    width: 40%;
-    height: 100vh;
-    background-color: rgba(129, 131, 245, .9);
-    border: 1px solid #004D40;
-    border-left: none;
-    border-bottom: none;
-    z-index: 2;
+.nav-bar-container {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  background: @tertiary;
+  padding: 5px;
+  border-bottom: 2px double darken(@tertiary, 10%);
 }
-header h3 {
-    font-family: @headerfont;
-    font-size: 3rem;
-    background-color: @navlinkbackground;
-    text-align: center;
-    position: fixed;
-    width:100%;
+.nav-button {
+  display: flex;
+  flex-direction: flex-start;
+}
+.nav-container {
+  border-radius: 8px;
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 40%;
+  height: auto;
+  border: 1px solid darken(@tertiary, 10%);
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
 }
 
-
-@media(min-width:800px){
-    nav .hiddenFeatures{
-        display: flex;
-    }
-    header h3 {
-        font-size: 3.5rem;
-    }
-}
-@media(min-width: 1000px){
-    nav .hiddenAboutUs{
-        display: flex;
-    }
-}
 nav a {
-
-
-    width: 100%;
-    margin: 0 auto;
-    font-size: 2.2rem;
-    display: flex;
-    justify-content: center;
-    border: 1px black solid;
-    padding: 20px;
-    background-color: @navlinkbackground;
-    color: @navlinkfontcolor;
-    font-weight: bold;
-    align-content: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  border: 1px black solid;
+  padding: 20px;
+  background-color: @primary;
+  color: @background;
+  font-weight: bold;
+  text-align: center;
 }
 .nav--open {
-    display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media(min-width:800px) {
-    nav a {
-        font-size: 3rem;
-    }
+@media (min-width: 800px) {
+  nav a {
+    font-size: 3rem;
+  }
 }
-
 
 .cta-container {
-    
-    margin: 0 auto;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    padding-top: 20px;
-    
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 70px;
 }
 
 .heroic-boy {
-    display: none;
-    width: 100%;
+  display: none;
+  width: 100%;
 }
-@media(min-width: 800px){
-    .heroic-boy{
-        display: flex;
-    }
-}
-
-h1 {
-    height: fit-content;
+@media (min-width: 800px) {
+  .heroic-boy {
     display: flex;
-    font-weight: bolder;
-    font-size: 4rem;
-    justify-content: center;
-    text-align: center;
-    font-family: @headerfont;
-    padding-top: 50px;
-    
-
+  }
 }
 
-
-@media(min-width:800px) {
-    h1 {
-        text-align: center;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: 0 auto;
-        font-size: 5rem;
-    }
+@media (min-width: 800px) {
+  h1 {
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 5rem;
+  }
 }
 
 .landing-photo {
-    width: 100%
+  width: 100%;
 }
 
 .content-text {
-    font-size: 2rem;
+  font-size: 2rem;
+}
+ul{
+  font-size: 1.5rem;
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
 .getApp-link {
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
 }
 
-@media(min-width: 800px) {
-    .getApp-link {
-        font-size: 1.2rem;
-    }
+@media (min-width: 800px) {
+  .getApp-link {
+    font-size: 1.2rem;
+  }
 }
+
+
 
 .learn-btn {
-    .button-creator(85%, 45px, @navlinkbackground, @navlinkfontcolor, 3rem);
-    margin: 0 auto;
-    display: flex;
-    align-content: center;
-    padding-top: 4px;
-    justify-content: center;
-    border-radius: 80px;
-
-    &:hover {
-        background-color: darken(@navlinkbackground, 5%);
-        color: pink;
-    }
-
-
+  .button-creator(85%, 45px, @highlight, @background, 3rem);
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  padding-top: 4px;
+  justify-content: center;
+  border-radius: 80px;
+  &:hover {
+    background-color: darken(@highlight, 5%);
+  }
+  &:active {
+      background-color: @background;
+      color: @highlight;
+  }
 }
 .content-with-buttons {
-    border-bottom: 4px dotted blue;
-    &:last-child{
-        border-bottom: none;
-    }
+  border-bottom: 4px dotted @primary;
+  a{
+      text-decoration: none;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .content-container {
-    margin: 15px;
+  margin: 15px;
 }
-.content-container h2{
-    text-decoration: underline;
-    font-weight: bolder;
-    font-size: 3.2rem;
-    text-align: center;
-    margin: 10px;
-    font-family: @headerfont;
+.content-container h2 {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 10px;
+  font-family: @headerfont;
 }
 
 footer {
-    border-top: 1px dotted blue;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 1rem;
+  border-top: 1px dotted @primary;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  width: 100%;
 }
-
-.footerAboutUs {
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    padding-top: 10px;
-    border-radius: 12px;
-    border: 2px dashed orange;
-    font-weight: bold;
-    font-size: 1.4rem;
-    background-color: dodgerblue;
-    margin: 5px;
+.footercontent {
+  width: 100%;
+}
+.footercontent img {
+  width: 100%;
+  max-width: 500px;
 }
