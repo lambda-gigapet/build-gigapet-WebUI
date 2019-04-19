@@ -3,9 +3,74 @@
 @import "mixins.less";
 @import "fontsettings.less";
 
+html, body{
+  html,
+  body {
+    height: 100%;
+    font-size: 62.5%;
+    font-family: @fontfamily;
+    background-color: @background;
+  }
+}
+
 
 * {box-sizing:border-box}
+p{
+  font-size: 2rem;
+}
 
+.container{
+  max-width: 500px;
+  margin: 0 auto;
+}
+.header-container{
+  background-color: @tertiary;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+h1{
+  display: flex;
+  justify-content: flex-end;
+  font-family: @headerfont;
+  font-size: 3.5rem;
+  width: 90%;
+}
+.nav-button{
+  display: flex;
+}
+.nav-container {
+  border-radius: 8px;
+  display: none;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  width: 40%;
+  height: auto;
+  border: 1px solid darken(@tertiary, 10%);
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+}
+nav a {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  border: 1px black solid;
+  padding: 20px;
+  background-color: @primary;
+  color: @background;
+  font-weight: bold;
+  text-align: center;
+}
+.nav--open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -96,9 +161,11 @@ footer {
   text-align: center;
   justify-content: center;
   align-items: center;
+  justify-items: center;
   display: flex;
   font-size: 1rem;
 }
 footer img{
     width:100%;
+    max-width: 500px;
 }
