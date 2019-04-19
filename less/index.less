@@ -18,7 +18,7 @@ body {
 }
 .welcome {
   font-family: @headerfont;
-  font-size: 3rem;
+  font-size: 5rem;
   display: flex;
   align-content: center;
 }
@@ -70,19 +70,6 @@ body {
   z-index: 2;
 }
 
-@media (min-width: 800px) {
-  nav .hiddenFeatures {
-    display: flex;
-  }
-  header h3 {
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 1000px) {
-  nav .hiddenAboutUs {
-    display: flex;
-  }
-}
 nav a {
   width: 100%;
   margin: 0 auto;
@@ -143,6 +130,11 @@ nav a {
 .content-text {
   font-size: 2rem;
 }
+ul{
+  font-size: 1.5rem;
+  list-style-type: circle;
+  list-style-position: inside;
+}
 
 .getApp-link {
   display: flex;
@@ -197,7 +189,7 @@ nav a {
 }
 
 footer {
-  border-top: 1px dotted blue;
+  border-top: 1px dotted @primary;
   margin: 10px;
   padding: 10px;
   text-align: center;
@@ -205,8 +197,12 @@ footer {
   align-items: center;
   display: flex;
   font-size: 1rem;
-}
-footer img {
   width: 100%;
 }
-
+.footercontent {
+  width: 100%;
+}
+.footercontent img {
+  width: 100%;
+  max-width: 500px;
+}
